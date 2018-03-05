@@ -4,3 +4,5 @@ http://www.cabiatl.com/Resources/Course/tutorial/html/block.html
 
 http://fsl.fmrib.ox.ac.uk/fslcourse/
 
+http://fsl.fmrib.ox.ac.uk/fslcourse/lectures/practicals/registration/index.html
+
