@@ -1,0 +1,17 @@
+http://fsl.fmrib.ox.ac.uk/fslcourse/lectures/practicals/registration/index.html
+
+Two-stage Registration and Unwarping with FEAT
+Take a look inside the data directory:
+
+This directory contains the following images:
+
+A structural scan: STRUCT.nii.gz
+A functional scan: FUNC.nii.gz
+A magnitude fieldmap image: FMAP_MAG.nii.gz
+A phase fieldmap image: FMAP_PHASE.nii.gz
+A text file containing the fieldmap information: FMAPS.txt
+A folder containing an example registration (EXAMPLE_REG - we will use this a bit later)
+A folder containing data for the optional section (multiband_data)
+
+>> Preparing the structural image
+
