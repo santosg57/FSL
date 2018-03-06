@@ -1,0 +1,35 @@
+http://web.mit.edu/fsl_v5.0.8/fsl/doc/wiki/FEAT(2f)UserGuide.html#Before_Running_FEAT
+
+>> Appendix A: Brief Overview of GLM Analysis
+
+sets up a model
+ (i.e., what you expect to see in the data)
+
+If the model is derived from the stimulation that was applied to the subject in the MRI scanner, then a good fit between the model and the data means that the data was indeed caused by the stimulation.
+
+The GLM used here is univariate.
+
+This means that the model is fit to each voxel's time-course separately.
+
+Independent Component Analysis - ICA - is an example of multivariate analysis.)
+
+Thus the data comprises a single 1D vector of intensity values.
+
+A very simple example of linear modelling is y(t)=a*x(t)+b+e(t). y(t) is the data, and is a 1D vector of intensity values - one for each time point, i.e., is a function of time. x(t) is the model, and is also a 1D vector with one value for each time point.
+
+In the case of a square-wave block design, x(t) might be a series of 1s and 0s - for example, 0 0 0 0 0 1 1 1 1 1 0 0 0 0 0 etc. a is the parameter estimate for x(t), i.e., the value that the square wave (of height 1) must be multiplied by to fit the square wave component in the data. b is a constant, and in this example, would correspond to the baseline (rest) intensity value in the data. e is the error in the model fitting.
+
+If there are two types of stimulus, the model would be y=a1*x1+a2*x2+b+e. Thus there are now two different model waveforms, corresponding to the two stimulus timecourses. There are also two interesting parameters to estimate, a1 and a2. Thus if a particular voxel reponds strongly to model x1 the model-fitting will find a large value for a1; if the data instead looks more like the second model timecourse, x2, then the model-fitting will give a2 a large value.
+
+GLM is normally formulated in matrix notation. Thus all of the parameters are grouped together into a vector A, and all of the model timecourses are grouped together into a matrix X. 
+
+Thus the left column is x1, for example, the timecourse associated with visual stimulation, and the right column is x2, e.g., auditory stimulation, which has a different timecourse to the visual stimulation.
+
+To convert estimates of parameter estimates (PEs) into statistical maps, it is necessary to divide the actual PE value by the error in the estimate of this PE value. 
+
+To convert a t value into a P (probability) or Z statistic requires standard statistical transformations; however, t, P and Z all contain the same information - they tell you how significantly the data is related to a particular EV (part of the model). Z is a "Gaussianised t", which means that a Z statistic of 2 is 2 standard deviations away from zero.
+
+If you want to model nonlinear interactions between two EVs (for example, when you expect the response to two different stimuli when applied simultaneously to give a greater response than predicted by adding up the responses to the stimuli when applied separately), then an extra EV is necessary. 
+
+
+
