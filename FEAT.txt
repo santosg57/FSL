@@ -1,0 +1,23 @@
+http://web.mit.edu/fsl_v5.0.8/fsl/doc/wiki/FEAT(2f)UserGuide.html#Appendix_A:_Brief_Overview_of_GLM_Analysis
+
+>> Before Running FEAT
+
+Before calling the FEAT GUI, you need to prepare each session's data as a 4D NIFTI or Analyze format image; there are utilities in fsl/bin called fslmerge and fslsplit to convert between multiple 3D images and a single 4D (3D+time) image.
+
+highres-
+
+>> FEAT Basics
+
+You can setup FEAT to process many input images, one after another, as long as they all require exactly the same analysis.
+
+>> FEAT in Detail
+
+First-level or Higher-level Analysis?
+Use First-level analysis for analysing each session's data - i.e. the time-series analysis of the raw 4D FMRI data.
+Use Higher-level analysis for combining first-level analyses. You can use this hierarchically - for example at second-level to analyse across several sessions and then at third-level to analyse across several subjects.
+
+Full Analysis or Partial Analysis?
+
+
+
+
