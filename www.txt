@@ -6,3 +6,17 @@ http://fsl.fmrib.ox.ac.uk/fslcourse/
 
 http://fsl.fmrib.ox.ac.uk/fslcourse/lectures/practicals/registration/index.html
 
+https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/GLM#Single-Group_Average_with_Additional_Covariate
+
+>> Single-Group Average with Additional Covariate
+
+disability scale
+behavioural measures
+mean reaction times
+
+
+http://web.mit.edu/fsl_v5.0.8/fsl/doc/wiki/FEAT(2f)UserGuide.html#Background_and_Theory
+
+
+
+
